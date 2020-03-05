@@ -3,25 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Open+Sans+Condensed:300|Roboto+Mono|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
 </head>
 <body>
-
-
-
-
-
-
-
-
-
-
-
+    <h1>Welcome</h1>
+    <h2>Click the start button to start the quiz</h2>
+<div id="container"> 
+    <div id="start">Start Quiz!</div>
+    <div id="quiz" style="display: none">
+        <div id="question"></div>  
+        <div id="qImg"></div>
+        <div id="choices">
+            <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+            <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+            <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+        </div>
+        <div id="timer">
+            <div id="counter"></div>
+            <div id="btimeGauge"></div>
+            <div id="timeGauge"></div>
+   
+        </div>
+        <div id= "score"></div> 
+        <div id="progress"></div>
+    </div>
+    <div id="scoreContainer" style="display: none"></div>
 
 
 
     
- <script src="./script.js"></script>   
+</div>   
+<script src="./script.js"></script>   
 </body>
 </html>
