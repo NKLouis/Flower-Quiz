@@ -7,13 +7,15 @@ const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
 const choiceD = document.getElementById("D");
 const counter = document.getElementById("counter");
-const scoreDiv = document.getElementById("scoreContainer");
+const scoreEl = document.getElementById("scoreContainer");
 const qImg = document.getElementById("qImg");
 const welcome = document.getElementById("h1")
 const instructions = document.getElementById("h2")
 
+var correctAnswers = 0;
 
-alert("Welcome to my quiz! There are 10 questions and you have 5 seconds for each question. GOOD LUCK!");
+
+// alert("Welcome to my quiz! There are 10 questions and you have 5 seconds for each question. GOOD LUCK!");
 
 // create object questions
 let questions = [
@@ -128,7 +130,7 @@ start.addEventListener("click",startQuiz);
 // start quiz
 function startQuiz(){
     start.style.display = "none";
-    //welcome.style.display = "none";
+    //instructions.style.display = "none";
     renderQuestion();
     quiz.style.display = "block";
     renderCounter();
@@ -170,7 +172,7 @@ function renderCounter(){
 
 function checkAnswer(answer){
     if( answer == questions[runningQuestion].correct){
-        
+        correctAnswers++
         score++;
         
         answerIsCorrect();
@@ -201,10 +203,13 @@ function answerIsWrong(){
 
 // show score %
 function scoreRender(){
-    scoreDiv.style.display = "block";
-    const scorePerCent = Math.round(100 * score/questions.length);
-    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
+    scoreEl.style.display = "block";
+    const scorePerCent =(correctAnswers/10)*100;
+    scoreEl.innerHTML += "<p>"+ scorePerCent +"%</p>";
+    console.log(scorePerCent);
 }
+
+
 
 
 

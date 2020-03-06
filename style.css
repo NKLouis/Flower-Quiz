@@ -153,6 +153,8 @@ h2 {
 /*Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575.98px) { 
     #container {
+        width: 550 ;
+        height: 300 ;
         font-size: large;
         margin-left: 5px;
     }
@@ -170,15 +172,68 @@ h2 {
 
 /* Small devices (landscape phones, less than 768px) */
 @media only screen and (max-width: 690px) {
-    
-  
+    #container {
+        width: 650;
+        height: 400;
+        font-size: large;
+        margin-left: 5px;
+    }
+    #start{
+        float: left;
+        margin-left: 10px;
+
+    }
+    #question {
+        font-size: 30px;
+    }
+    #choice {
+        font-size: 24px;
+    }
+
 
   }
   
   /* Medium devices (tablets, less than 992px) */
   @media only screen and (max-width: 991.98px){
-    
-  
+    #container {
+        width: 950;
+        height: 450;
+        font-size: large;
+        margin-left: 5px;
+    }
+    #start{
+        float: left;
+        margin-left: 10px;
+
+    }
+    #question {
+        font-size: 30px;
+    }
+    #choice {
+        font-size: 24px;
+    }
+
+  }
   /*Large devices (desktops, less than 1200px) */
   @media only screen and (max-width: 1199.98px){
+    #container {
+        width: 1100;
+        height: 550;
+        font-size: large;
+        margin-left: 5px;
+    }
+    #start{
+        float: left;
+        margin-left: 10px;
+
+    }
+    #question {
+        font-size: 30px;
+    }
+    #choice {
+        font-size: 24px;
+    }
+
+
+  }
     
