@@ -84,9 +84,9 @@ let questions = [
         correct : "B"
     },{
         question: "What flower is it?",
-        img     : "image/siam-tulip.jpg",
+        img     : "image/sunflower.jpg",
         choiceA : "Cherry blossom",
-        choiceB : "Siam tulip",
+        choiceB : "Sunflower",
         choiceC : "Rose",
         choiceD : "Orchid",
         correct : "B"
