@@ -15,8 +15,6 @@ const instructions = document.getElementById("h2")
 var correctAnswers = 0;
 
 
-// alert("Welcome to my quiz! There are 10 questions and you have 5 seconds for each question. GOOD LUCK!");
-
 // create object questions
 let questions = [
     {
@@ -139,6 +137,7 @@ function startQuiz(){
 }
 
 // render progress
+
 function renderProgress(){
     for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
         progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
@@ -147,28 +146,7 @@ function renderProgress(){
 
 // counter render
 
-// function renderCounter(){
-//     if (count <= questionTime)
-//     {
-//     counter.innerHTML = count ;
-//     count++;
-//     } else
-//     {
-//     count = 0;
-//     answerIsWrong();
-//     if (runningQuestion < lastQuestion)
-//     {
-//     runningQuestion++;
-//     renderQuestion();
-//     } else
-//     {
-//     clearInterval(TIMER);
-//     scoreRender();
-//     }
-//     }
-// }
-
-var secondsLeft = 46;
+var secondsLeft = 31;
 
 function setTime() {
   var timerInterval = setInterval(function() {
@@ -183,7 +161,7 @@ function setTime() {
 }
 
 
-// check the answer
+// check the answers
 
 function checkAnswer(answer){
     if( answer == questions[runningQuestion].correct){
@@ -204,24 +182,26 @@ function checkAnswer(answer){
         clearInterval(TIMER);
         scoreRender();
     }
+
 }
 
-// if answer is correct the button turns green
+// if the answer is correct the button turns green
 function answerIsCorrect(){
     document.getElementById(runningQuestion).style.backgroundColor = "green";
 }
 
-// if answer is Wrong the button turns red
+// if the answer is Wrong the button turns red
 function answerIsWrong(){
     document.getElementById(runningQuestion).style.backgroundColor = "red";
 }
 
-// show score %
+// score render
 function scoreRender(){
     scoreEl.style.display = "block";
     const scorePerCent =(correctAnswers/10)*100;
-    scoreEl.innerHTML += "<p>"+ scorePerCent +"%</p>";
+    scoreEl.innerHTML += "<p>" + "Your score is " + scorePerCent +"%</p>";
     console.log(scorePerCent);
+ 
 }
 
 
