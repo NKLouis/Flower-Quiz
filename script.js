@@ -133,9 +133,9 @@ function startQuiz(){
     //instructions.style.display = "none";
     renderQuestion();
     quiz.style.display = "block";
-    renderCounter();
+    setTime();
     renderProgress();
-    timer = setInterval(renderCounter,1000);
+
 }
 
 // render progress
@@ -147,26 +147,41 @@ function renderProgress(){
 
 // counter render
 
-function renderCounter(){
-    if (count <= questionTime)
-    {
-    counter.innerHTML = count ;
-    count++;
-    } else
-    {
-    count = 0;
-    answerIsWrong();
-    if (runningQuestion < lastQuestion)
-    {
-    runningQuestion++;
-    renderQuestion();
-    } else
-    {
-    clearInterval(TIMER);
-    scoreRender();
+// function renderCounter(){
+//     if (count <= questionTime)
+//     {
+//     counter.innerHTML = count ;
+//     count++;
+//     } else
+//     {
+//     count = 0;
+//     answerIsWrong();
+//     if (runningQuestion < lastQuestion)
+//     {
+//     runningQuestion++;
+//     renderQuestion();
+//     } else
+//     {
+//     clearInterval(TIMER);
+//     scoreRender();
+//     }
+//     }
+// }
+
+var secondsLeft = 46;
+
+function setTime() {
+  var timerInterval = setInterval(function() {
+    secondsLeft--;
+    counter.textContent = secondsLeft;
+
+    if(secondsLeft === 0) {
+      clearInterval(timerInterval);
     }
-    }
+
+  }, 1000);
 }
+
 
 // check the answer
 
