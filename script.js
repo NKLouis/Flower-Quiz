@@ -20,9 +20,9 @@ let questions = [
     {
         question: "What flower is it?",
         img     : "image/cherry-blossom.jpg",
-        choiceA : "Cherry blossom",
+        choiceA : "Cherry Blossom",
         choiceB : "Tulip",
-        choiceC : "Rose",
+        choiceC : "Camellia",
         choiceD : "Orchid",
         correct : "A"
     
@@ -37,9 +37,9 @@ let questions = [
     },{
         question: "What flower is it?",
         img     : "image/ochid.jpg",
-        choiceA : "Cherry blossom",
+        choiceA : "Cherry Blossom",
         choiceB : "Tulip",
-        choiceC : "Rose",
+        choiceC : "Passion Flower",
         choiceD : "Orchid",
         correct : "D"
     },{
@@ -64,20 +64,20 @@ let questions = [
         choiceA : "Magnolia",
         choiceB : "Crape myrtle",
         choiceC : "Hydrangea",
-        choiceD : "Orchid",
+        choiceD : "California Poppy",
         correct : "B"
     },{
         question: "What flower is it?",
         img     : "image/magnolia.jpg",
         choiceA : "Magnolia",
         choiceB : "Plumeria",
-        choiceC : "Sunflower",
+        choiceC : "Native Azalea",
         choiceD : "Crape myrtle",
         correct : "A"
     },{
         question: "What flower is it?",
         img     : "image/tulip.jpg",
-        choiceA : "Cherry blossom",
+        choiceA : "Cherry Blossom",
         choiceB : "Tulip",
         choiceC : "Rose",
         choiceD : "Orchid",
@@ -85,16 +85,16 @@ let questions = [
     },{
         question: "What flower is it?",
         img     : "image/sunflower.jpg",
-        choiceA : "Cherry blossom",
+        choiceA : "Cherry Blossom",
         choiceB : "Sunflower",
-        choiceC : "Rose",
+        choiceC : "Coreopsis",
         choiceD : "Orchid",
         correct : "B"
     },{
         question: "What flower is it?",
         img     : "image/plumeria.jpg",
         choiceA : "Orchid",
-        choiceB : "Rose",
+        choiceB : "Pua Aloalo",
         choiceC : "Daffodil",
         choiceD : "Plumeria",
         correct : "D"
