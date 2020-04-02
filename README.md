@@ -1,7 +1,7 @@
 # javascript2
 
  Live Link
-  https://nklouis.github.io/javascript2/.
+ https://nklouis.github.io/Flower-Quiz/
 
 ## Contributors
 @NKLouis
