@@ -6,7 +6,7 @@
   
 
 ## Description
-Test your flower knowledge. The test has 10 questions, 4 choices and you will get the test scores as a percentage.
+An application that uses to test your flower knowledge. The test has 10 questions, 4 choices and you will get the test scores as a percentage.
 
 ![](http://g.recordit.co/YdoiX0qKk5.gif)
 
